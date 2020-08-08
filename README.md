@@ -7,11 +7,11 @@ This project provides a replacement for `malloc`/`free` that are used by default
 
 Why? According to [twiggy](https://github.com/rustwasm/twiggy) report `dlmalloc` is 6013 bytes long and `dlfree` is 1709. 7722 bytes in total. Not a lot... until it is 30%+ of the total binary size.
 
-This implementation is much simpler and shorter: `malloc` is 388 bytes, `free` is 56 bytes, 444 bytes in total — way better!
+This implementation is much simpler and shorter: `malloc` is 299 bytes, `free` is 47 bytes, 346 bytes in total — way better!
 
 And in the [project](https://github.com/eustas/2im) I've created this library for it works even faster than the default one.
 
-There are just 50 lines of code. What is the purpose of simplicity? So that you can read and understand it and modify, to make it a perfect fit for your project.
+There are just 30 lines of code. What is the purpose of simplicity? So that you can read and understand it and modify, to make it a perfect fit for your project.
 
 > **Nota bene**: this is neither the simplest (and smallest), nor the fastest implementation; it is just practical. 
 
